@@ -1,9 +1,5 @@
 .homepage{
     background-color: lightsteelblue;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
 }
 .card-body{
     background-color: lightsteelblue;
