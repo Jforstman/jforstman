@@ -36,6 +36,7 @@
     </div>
   </div>
 </nav> 
+  <div id="content"></div>
 
 
     </head>
@@ -49,6 +50,8 @@
         let page      = location.hash.replace('#', '');
         const res     = await fetch(page);
         const content = await res.text();
+        const element = document.getElementById('content');
+        element.innerHTML = content;
     };            
 
     window.addEventListener('hashchange', loadPage);    
